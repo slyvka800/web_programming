@@ -1,0 +1,79 @@
+.responses_section {
+    display: flex;
+    align-items: center;
+}
+
+.boxes_with_responses {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-bottom: 288px;
+}
+
+.box {
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    width: 350px;
+    height: 230px;
+    margin: 20px 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.box .paragraph {
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    line-height: 30px;
+}
+
+#selected_box {
+    border-color: #F53838;
+    margin-left: -25px;
+}
+
+.responses .title {
+    font-weight: 500;
+    margin-top: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.responses .paragraph {
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 58px;
+    text-align: center;
+}
+
+.name {
+    padding-left: 80px;
+    margin-top: -45px;
+}
+
+.location {
+    padding-left: 80px;
+    margin-top: -8px;
+}
+
+.points {
+    padding-left: 250px;
+    margin-top: -50px;
+    font-weight: 400px;
+}
+
+.star {
+    position: relative;
+    left: 280px;
+    top: -43px;
+}
+
+.avatar {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
