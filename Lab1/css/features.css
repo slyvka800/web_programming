@@ -1,0 +1,33 @@
+.features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 0;
+    display: flex;
+}
+
+.features_section {
+    background: linear-gradient(180deg, #F6F5F5 -45.04%, #FFFFFF 19.67%, #F4F3F3 88.56%);
+}
+
+ul.features_list {
+    display: table-row;
+}
+
+.mark {
+    /* list-style-image: url(../images/mark.svg); */
+    background: url(../images/mark.svg) no-repeat left top;
+    padding: 4px 10px 10px 30px;
+    margin: 10px 0 10px 0;
+}
+
+.right_features {
+    width: 400px;
+    position: relative;
+    top: 60px;
+    left: 20%;
+}
+
+.features_image {
+    width: 500px;
+    margin-top: 0px;
+}

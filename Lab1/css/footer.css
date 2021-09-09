@@ -1,0 +1,72 @@
+footer {
+    background: #F6F5F5;
+    height: 247px;
+    position: relative;
+    z-index: -1;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    /* align-content: space-around; */
+}
+
+.subscription_info {
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    margin-top: -130px;
+    width: 1140px;
+    height: 233px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 114px -50px #0D1025;
+}
+
+.subscribe_now {
+    width: 250px;
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 80px;
+    font-weight: bold;
+    line-height: 25px;
+    background: #F53838;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    box-shadow: 0 40px 40px -20px #F53838;
+}
+
+.subs_info_text .title {
+    margin-top: 70px;
+    margin-left: 80px;
+}
+
+.subs_info_text .paragraph {
+    margin-left: 80px;
+    margin-top: -5px;
+}
+
+.copyrights {
+    margin-left: 50px;
+    margin-top: 170px;
+}
+
+.social_networks_block {
+    margin-top: 160px;
+    margin-left: 320px;
+    display: flex;
+}
+
+.social_networks {
+    height: 70px;
+}
+
+.footer_logo {
+    display: flex;
+    margin-top: 165px;
+    margin-left: 350px;
+}
