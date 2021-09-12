@@ -1,0 +1,46 @@
+body {
+    font-family: Rubik;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 10%;
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: #4F5665;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* logo */
+
+.logo_title {
+    margin-top: 10px;
+}
+
+.lassles {
+    padding: 0;
+    color: #0B132A;
+    font-weight: 500;
+}
+
+.vpn {
+    padding: 0;
+    color: #0B132A;
+    font-weight: 700;
+}
+
+.logo {
+    vertical-align: middle;
+    height: 35px;
+}
