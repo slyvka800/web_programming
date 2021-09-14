@@ -127,3 +127,28 @@
         margin-top: 10px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .boxes_with_responses .paragraph {
+        line-height: 15px;
+    }
+    .avatar {
+        margin: 5px;
+    }
+    .box {
+        height: 150px;
+    }
+    .box .name {
+        font-size: 14px;
+    }
+    .box .name,
+    .location {
+        padding-left: 60px;
+    }
+    .points {
+        padding-left: 170px;
+    }
+    .star {
+        left: 175px;
+    }
+}

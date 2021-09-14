@@ -32,3 +32,47 @@
         background: url(../images/Illustration\ 1.png) no-repeat right 100px bottom 150px /40%;
     }
 }
+
+@media screen and (max-width: 950px) {
+    .hero__inner {
+        background: url(../images/Illustration\ 1.png) no-repeat right 30px bottom 120px /40%;
+    }
+    .hero .container {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .paragraph,
+    .title {
+        width: 250px;
+    }
+    .get_started {
+        width: 150px;
+        height: 40px;
+        line-height: 15px;
+    }
+    .hero__inner {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .hero__inner {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__inner .paragraph,
+    .hero__inner .title,
+    .get_started {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero .container {
+        margin: 0 10px;
+    }
+}

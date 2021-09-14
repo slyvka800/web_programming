@@ -20,23 +20,6 @@ footer {
     justify-content: space-between;
 }
 
-@media screen and (min-width: 1500px) {
-    .footer {
-        position: static;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 950px) and (max-width: 1339px) {
-    .footer_section {
-        min-width: 0;
-        width: 100%;
-    }
-}
-
 .subscription_info {
     background: #fff;
     position: absolute;
@@ -99,4 +82,107 @@ footer {
     display: flex;
     margin-top: 165px;
     /* margin-left: 350px;  */
+}
+
+@media screen and (min-width: 1500px) {
+    .footer {
+        position: static;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* @media screen and (min-width: 800px) and (max-width: 1339px) { */
+
+@media screen and (max-width: 1339px) {
+    .footer_section {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .social_networks {
+        height: 40px;
+    }
+    .copyrights {
+        font-size: 13px;
+    }
+    footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subscription_info {
+        margin-top: -130px;
+        width: 79%;
+        height: 180px;
+        border-radius: 10px;
+        box-shadow: 20px 20px 114px -50px #0D1025;
+    }
+    .subs_info_text .title,
+    .subs_info_text .paragraph {
+        width: 190px;
+        margin-left: 20px;
+    }
+    .subscribe_now {
+        width: 150px;
+        height: 40px;
+        line-height: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subscription_info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subs_info_text .title {
+        margin-top: 30px;
+        width: 150px;
+    }
+    .subs_info_text .paragraph {
+        width: 150px;
+    }
+    .subs_info_text .title,
+    .subs_info_text .paragraph,
+    .subscribe_now {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .copyrights,
+    .footer_logo {
+        margin-top: 70px;
+    }
+    .footer_logo .vpn,
+    .footer_logo .lasles {
+        font-size: 8px;
+    }
+    .footer_logo .logo {
+        height: 15px;
+        margin-top: 1px;
+    }
+    .footer_logo .logo_title {
+        padding-left: 3px;
+    }
+    .copyrights {
+        font-size: 8px;
+    }
+    .social_networks_block {
+        margin-top: 85px;
+    }
+    footer {
+        height: 120px;
+        padding: 0 20px;
+    }
+    .social_networks {
+        height: 25px;
+    }
 }

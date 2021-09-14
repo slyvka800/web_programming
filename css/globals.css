@@ -44,3 +44,26 @@ button {
     vertical-align: middle;
     height: 35px;
 }
+
+
+/* adaptive stuff */
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+    }
+    .lassles {
+        font-size: 15px;
+    }
+    .vpn {
+        font-size: 15px;
+        padding-top: 1px;
+    }
+    .logo {
+        vertical-align: middle;
+        height: 30px;
+    }
+}
