@@ -1,0 +1,154 @@
+.responses_section {
+    display: flex;
+    align-items: center;
+}
+
+.responses_section .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxes_with_responses {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-bottom: 288px;
+}
+
+.box {
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    width: 350px;
+    height: 230px;
+    margin: 20px 20px 0 20px;
+    padding: 10px;
+}
+
+.box .paragraph {
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    line-height: 30px;
+}
+
+#selected_box {
+    border-color: #F53838;
+}
+
+.responses .title {
+    font-weight: 500;
+    margin-top: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.responses .paragraph {
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 58px;
+    text-align: center;
+}
+
+.name {
+    padding-left: 80px;
+    margin-top: -45px;
+}
+
+.location {
+    padding-left: 80px;
+    margin-top: -8px;
+}
+
+.points {
+    padding-left: 250px;
+    margin-top: -50px;
+    font-weight: 400px;
+}
+
+.star {
+    position: relative;
+    left: 280px;
+    top: -43px;
+}
+
+.avatar {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1339px) {
+    .boxes_with_responses {
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .boxes_with_responses {
+        width: 85%;
+    }
+    .box {
+        width: 80%;
+        height: 190px;
+        margin: 5px;
+        padding: 5px 5px 15px 5px;
+    }
+    .box .name {
+        font-size: 18px;
+    }
+    .box .paragraph {
+        font-size: 13px;
+        margin-top: -30px;
+        width: 85%;
+    }
+    .location {
+        padding-left: 80px;
+        margin-top: -5px;
+    }
+    .points {
+        padding-left: 230px;
+        margin-top: -40px;
+        font-weight: 400px;
+    }
+    .star {
+        position: relative;
+        left: 235px;
+        top: -70px;
+    }
+    .avatar {
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .boxes_with_responses .paragraph {
+        line-height: 15px;
+    }
+    .avatar {
+        margin: 5px;
+    }
+    .box {
+        height: 150px;
+    }
+    .box .name {
+        font-size: 14px;
+    }
+    .box .name,
+    .location {
+        padding-left: 60px;
+    }
+    .points {
+        padding-left: 170px;
+    }
+    .star {
+        left: 175px;
+    }
+}

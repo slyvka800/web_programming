@@ -1,0 +1,155 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    padding-inline-start: 10px;
+}
+
+.header__nav__item {
+    margin-right: 60px;
+}
+
+.hamburgaaar {
+    display: none;
+}
+
+.menu_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.header__buttons {
+    display: flex;
+}
+
+.header__nav {
+    margin-left: 120px;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__button__black {
+    background: white;
+    border: 0;
+    display: block;
+    color: black;
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    width: 150px;
+    height: 45px;
+    top: 38px;
+}
+
+.header__button__red {
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    color: #F53855;
+    /* left: 1140px; */
+    top: 38px;
+    border: 2px solid #F53855;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 1500px) {
+    .hero .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .header__nav {
+        margin-left: 40px;
+    }
+    .header__nav__item {
+        margin-right: 20px;
+    }
+    .header__button__black {
+        width: 100px;
+    }
+    .header__button__red {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__nav {
+        margin-left: 20px;
+    }
+    .header__nav__item {
+        margin-right: 10px;
+    }
+    .header__button__black {
+        width: 80px;
+    }
+    .header__button__red {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header__nav {
+        position: fixed;
+        top: 77px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        clip-path: circle(0 at top left);
+        transition: clip-path 0.4s ease-in;
+        background-color: rgb(206, 205, 205);
+        margin-left: 0;
+    }
+    .header__nav.open {
+        clip-path: circle(500px at top left);
+    }
+    .hamburgaaar {
+        display: block;
+    }
+    .header__logo {
+        padding-left: 60px;
+    }
+    .header__nav ul {
+        flex-direction: column;
+    }
+    .header__nav__item {
+        margin: 15px 0 15px 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__buttons ul {
+        margin: 8px 0;
+    }
+    .header__button__black,
+    .header__button__red {
+        height: 35px;
+        font-size: 13px;
+        width: 60px;
+    }
+    .logo {
+        height: 20px;
+        padding-top: 10px;
+    }
+    .lasles,
+    .vpn {
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .header__logo {
+        padding-left: 30px;
+    }
+    .menu_icon {
+        height: 30px;
+        width: 30px;
+    }
+}
