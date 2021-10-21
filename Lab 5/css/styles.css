@@ -1,0 +1,55 @@
+.left_section {
+    width: 20%;
+}
+
+.right_section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name_container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.fuel_container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.search_container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.passengers_container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#submit_button {
+    margin-left: 30px;
+}
+
+.search_expresion {
+    margin: 30px 0;
+}
+
+.item-card {
+    max-width: 420px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#totalValue {
+    font-size: large;
+    padding-left: 100px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaneWiki</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <!-- UUID library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="left_section">
+            <form action="" class="add_item">
+                <div class="name_container"><label for="" class="name">Plane name</label><input id="name_input" type="text" class="name_input form-control"></div>
+                <div class="passengers_container"><label for="" class="passengers">Amount of passengers</label><input id="passengers_input" type="text" class="passengers_amount form-control"></div>
+                <div class="fuel_container"><label for="" class="fuel">Fuel capacity</label><input id="fuel_input" type="text" class="fuel_input form-control"></div>
+                <button id="submit_button" type="submit" class="btn btn-primary">Add plane</button>
+            </form>
+            <form action="" class="search_form">
+                <div class="search_container">
+                    <input id="find_input" type="text" class="search_expresion form-control">
+                    <button id="find_button" class="btn btn-primary">Search</button>
+                    <button id="cancel_find_button" type="button" class="btn btn-danger mt-4">Cancel</button>
+                </div>
+            </form>
+            <select id="propertyForTotalValue" value="fuel">
+                <option value="fuel" id="fuel_opt">Fuel</option>
+                <option value="passengers" id="passengers_opt">Passengers</option>
+            </select>
+            <lebel id="totalValue"></lebel>
+            <select id="propertyForSorting" value="name">
+                <option value="name">Name</option>
+                <option value="passengers">Passengers</option>
+                <option value="fuel">Fuel</option>
+            </select>
+            <select id="orderSelector" value="ASC">
+                <option value="ASC">ASC</option>
+                <option value="DESC">DESC</option>
+            </select>
+        </section>
+        <section class="right_section">
+            <ul id="items_container" class="items_list">
+                <!-- <li class="item"></li> -->
+                <!-- <li id="${id}" class="card mb-3 item-card" draggable="true">
+                    <img src="./images/boeing-777-300er.jpg" class="item-container__image card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title">${name_of_plane}</h5>
+                        <h3 class="card-text">${passengers}</h3>
+                        <h3 class="card-text">${fuel}</h3>
+                        <button id="${EDIT_BUTTON_PREFIX}${id}" type="button" class="btn btn-info">
+                            Edit
+                        </button>
+                        <button id="${DELETE_BUTTON_PREFIX}${id}" type="button" class="btn btn-danger">
+                            Delete
+                        </button>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+    </div>
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
