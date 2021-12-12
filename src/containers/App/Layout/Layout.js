@@ -8,6 +8,7 @@ import {
   InstagramOutlined,
   FacebookOutlined,
 } from "@ant-design/icons";
+import { NavLink } from "react-router-dom";
 
 const Layout = () => (
   <StyledHeader title="Fabulous Wings">
@@ -29,7 +30,7 @@ const Layout = () => (
     <div>
       <IconsWrapper>
         <SearchOutlined />
-
+        
         <ShoppingCartOutlined />
       </IconsWrapper>
     </div>

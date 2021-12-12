@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 import { LinkingWrapper } from './Navigation.styles';
-import Home from '../Home/Home';
+import Home, { data } from '../Home/Home';
 import Shop from "containers/routes/Shop";
 import { ItemPage } from "components/CardItem/ItemPage";
+import Cart from "../../components/Cart/Cart";
 
 const Navigation = () => (
   <Router>
@@ -29,6 +30,11 @@ const Navigation = () => (
             Contact
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/cart" activeClassName="selected">
+            Cart
+          </NavLink>
+        </li>
       </ul>
       <Routes>
         <Route path="/shop" element={<Shop/>}/>
@@ -41,6 +47,7 @@ const Navigation = () => (
           <div>Hello it is contact</div>
         </Route>
         <Route path="/" element={<Home/>}/>
+        <Route path="/cart" element={<Cart/>}></Route>
       </Routes>
     </LinkingWrapper>
   </Router>

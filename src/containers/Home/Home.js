@@ -73,7 +73,9 @@ const Home = () => {
       data = planesFromServachok
       setPlanes(planesFromServachok)
       var elem = document.getElementById("spinner");
-      elem.parentNode.removeChild(elem);
+      if (elem != null) {
+        elem.parentNode.removeChild(elem);
+      }
       // console.log(planesFromServachok)
     }, 1000)
   }, [])
